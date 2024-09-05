@@ -29,18 +29,24 @@ public class String1 {
         for(int i = 0; i < s.length(); i++)
             append(s.getChar(i));
     }
-    public boolean equal(String1 s, boolean flag) {
-    flag = false;
+    public boolean equal(String1 s) {
+    boolean flag = false;
     if(s.lenght() != str.lenght())
 	    return flag;
     else{
 	    for(int i = 0; i<length(); i++){
-		    if(s.getChar[i] == str.getChar[i])
+		    if(s.getChar[i] == str.getChar[i]){
 			    flag =true;
-	    }	    
-        }
+		    else{
+			    flag = false;
+			    break;
+		    }
+		 }   
+	     } 
 	    return flag;
-    }
+        }
+	   
+    
     public void reverse() {
 	    
         int left = 0;
